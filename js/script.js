@@ -1,13 +1,13 @@
 let sum = 0;
-let N = Math.floor(+prompt("Введіть перше число"));
-while(isNaN(N) || N == ""){
-    N =  +prompt("Введіть перше число");
+let N = +prompt("Введіть перше число");
+while(isNaN(N) || N == "" || !Number.isInteger(N)){
+    N = +prompt("Введіть перше ціле число");
 }
 
-let M = Math.floor(+prompt("Введіть друге число"));
+let M = +prompt("Введіть друге ціле число");
 
-while(isNaN(M) || N >= M || M ==""){
-    M = +prompt("Введіть друге число, більше від попереднього");
+while(isNaN(M) || N >= M || M =="" || !Number.isInteger(M)){
+    M = +prompt("Введіть друге ціле число, більше від попереднього");
 }
 
 
